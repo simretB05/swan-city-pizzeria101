@@ -1,0 +1,49 @@
+@use "fonts";
+
+// font-face mixins
+
+@mixin poppins-regular {
+  font-family: "poppins-regular";
+  font-weight: normal;
+  font-style: normal;
+  @content;
+}
+
+@mixin poppins-semi {
+  font-family: "poppins-semi";
+  font-weight: 500;
+  font-style: normal;
+  @content;
+}
+
+@mixin poppins-bold {
+  font-family: "poppins-bold";
+  font-weight: 700;
+  font-style: normal;
+  @content;
+}
+
+// font-size  mixins
+@mixin font-properties(
+  $text-size,
+  $line-height: normal,
+  $letter-spacing: normal
+) {
+  font-size: $text-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  @content;
+}
+//grid mixin
+
+@mixin grid-center-columns($display, $place-items, $columns) {
+  display: $display;
+  place-items: $place-items;
+  grid-template-columns: repeat($columns, 1fr);
+}
+
+@mixin grid-center-rows($display, $place-items, $rows) {
+  display: $display;
+  place-items: $place-items;
+  grid-template-rows: repeat($rows, 1fr);
+}

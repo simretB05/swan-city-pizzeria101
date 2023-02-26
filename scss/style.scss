@@ -1,0 +1,16 @@
+@use "partials/header";
+@use "partials/footer";
+@use "partials/variables";
+@use "partials/fonts";
+@use "partials/mixin";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  list-style: none;
+}
+#main {
+  min-height: 80vh;
+}
