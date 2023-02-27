@@ -13,4 +13,33 @@ body {
 }
 #main {
   min-height: 80vh;
+  @include mixin.grid-center-columns(grid, center, 1);
+
+  .main-menu {
+    @include mixin.grid-center-columns(grid, center, 1);
+    align-self: start;
+    list-style: none;
+    width: 100%;
+    border: 1px solid variables.$italian-limegreen;
+    background-color: variables.$italian-white;
+    .menu-list {
+      width: 100%;
+      min-height: 6vh;
+      list-style: none;
+      @include mixin.grid-center-flexable(grid, center, repeat(5, 1fr));
+      .menu-item {
+        font-size: 0.59rem;
+        letter-spacing: 0.0211px;
+        text-transform: uppercase;
+        color: variables.$italian-limegreen;
+        font-weight: 900;
+      }
+    }
+  }
+}
+// / tablet-query
+.social-list {
+  @media only screen and (min-width: 600px) {
+    @include mixin.grid-center-tabletHeader(grid, center, repeat(3, 1fr));
+  }
 }

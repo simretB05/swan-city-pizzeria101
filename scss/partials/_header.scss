@@ -6,18 +6,20 @@
   @include mixin.poppins-bold;
   background-color: variables.$italian-limegreen;
   .header-nav {
-    @include mixin.grid-center-columns(grid, end, 1);
+    width: 100%;
+    @include mixin.grid-center-columns(grid, start, 1);
     @include mixin.grid-center-rows(grid, center, 2);
 
     .social-list {
       align-self: start;
-      min-height: 4.2vh;
+      list-style: none;
+      height: 4.8vh;
+      width: 100%;
       background-color: variables.$itaian-black;
       padding: 0 16px;
-      @include mixin.grid-center-columns(grid, center, 3);
-
-      li {
-        @include mixin.grid-center-columns(grid, end, 2);
+      @include mixin.grid-center-header(grid, center, repeat(3, 1fr));
+      .social-item {
+        width: 100%;
         a {
           text-decoration: none;
           @include mixin.grid-center-columns(grid, center, 2);
@@ -26,7 +28,7 @@
           img {
             width: 20px;
             height: 20px;
-            justify-self: center;
+            justify-self: end;
           }
           .mobile {
             @include mixin.font-properties(0.75rem);
@@ -43,9 +45,9 @@
     .mobile-nav {
       @include mixin.grid-center-columns(grid, center, 3);
       width: 100%;
+      min-height: 70%;
       background-color: variables.$italian-limegreen;
       align-self: start;
-      min-height: 5.612vh;
 
       .menu {
         justify-self: start;
@@ -80,36 +82,9 @@
   }
 }
 
-// .header-social {
-//   color: variables.$italian-limegreen;
-//   @include mixin.grid-center(grid, center, 3);
-//   @include mixin.font-properties(0.9rem);
-//   padding: 16px;
-
-//   .headerSocial-item {
-//     @include mixin.grid-center(grid, start, 2);
-//     .social-discriptionMobile {
-//       @include mixin.font-properties(0.9rem);
-//     }
-//     .social-discription {
-//       display: none;
-//     }
-//     img {
-//       background-color: variables.$italian-limegreen;
-//       width: 20px;
-//       height: 20px;
-//       justify-self: center;
-//     }
-//   }
-// }
-
-//   .main-header {
-//     @include mixin.grid-center(grid, center, 4);
-//     padding: 16px;
-//     background-color: variables.$italian-white;
-
-//     .logo {
-//       @include mixin.poppins-bold;
-//     }
-//   }
-// }
+// tablet-query
+.social-list {
+  @media only screen and (min-width: 600px) {
+    @include mixin.grid-center-tabletHeader(grid, center, repeat(3, 1fr));
+  }
+}

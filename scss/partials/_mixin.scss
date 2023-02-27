@@ -1,7 +1,7 @@
 @use "fonts";
+@use "variables";
 
 // font-face mixins
-
 @mixin poppins-regular {
   font-family: "poppins-regular";
   font-weight: normal;
@@ -46,4 +46,33 @@
   display: $display;
   place-items: $place-items;
   grid-template-rows: repeat($rows, 1fr);
+}
+@mixin grid-center-header($display, $place-items, $columns) {
+  display: $display;
+  place-items: $place-items;
+  grid-template-columns: repeat(auto-fill, minmax(94px, 1fr));
+}
+@mixin grid-center-tabletHeader($display, $place-items, $columns) {
+  display: $display;
+  place-items: $place-items;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+@mixin grid-center-flexable($display, $place-items, $columns) {
+  display: $display;
+  place-items: $place-items;
+  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+}
+
+// mixins for media queries
+
+@mixin tablet {
+  @media (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-breakpoint) {
+    @content;
+  }
 }

@@ -27,8 +27,9 @@
   background-color: #65cd00;
 }
 #header .header-nav {
+  width: 100%;
   display: grid;
-  place-items: end;
+  place-items: start;
   grid-template-columns: repeat(1, 1fr);
   display: grid;
   place-items: center;
@@ -36,31 +37,31 @@
 }
 #header .header-nav .social-list {
   align-self: start;
-  min-height: 4.2vh;
+  list-style: none;
+  height: 4.8vh;
+  width: 100%;
   background-color: #0e0d0d;
   padding: 0 16px;
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(94px, 1fr));
 }
-#header .header-nav .social-list li {
-  display: grid;
-  place-items: end;
-  grid-template-columns: repeat(2, 1fr);
+#header .header-nav .social-list .social-item {
+  width: 100%;
 }
-#header .header-nav .social-list li a {
+#header .header-nav .social-list .social-item a {
   text-decoration: none;
   display: grid;
   place-items: center;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
 }
-#header .header-nav .social-list li a img {
+#header .header-nav .social-list .social-item a img {
   width: 20px;
   height: 20px;
-  justify-self: center;
+  justify-self: end;
 }
-#header .header-nav .social-list li a .mobile {
+#header .header-nav .social-list .social-item a .mobile {
   font-size: 0.75rem;
   line-height: normal;
   letter-spacing: normal;
@@ -68,7 +69,7 @@
   color: #65cd00;
   margin-left: 5px;
 }
-#header .header-nav .social-list li a .tablet {
+#header .header-nav .social-list .social-item a .tablet {
   display: none;
 }
 #header .header-nav .mobile-nav {
@@ -76,9 +77,9 @@
   place-items: center;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
+  min-height: 70%;
   background-color: #65cd00;
   align-self: start;
-  min-height: 5.612vh;
 }
 #header .header-nav .mobile-nav .menu {
   justify-self: start;
@@ -109,6 +110,14 @@
 #header .header-nav .nav-login img {
   width: 20px;
   height: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  .social-list {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
 }
 
 /*# sourceMappingURL=menu.css.map */
