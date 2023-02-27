@@ -136,8 +136,7 @@
   grid-template-columns: repeat(1, 1fr);
 }
 #footer #main-footer #footer-nav,
-#footer #main-footer #activity,
-#footer #main-footer #contact-us {
+#footer #main-footer #activity {
   display: grid;
   place-items: start;
   grid-template-columns: repeat(1, 1fr);
@@ -145,37 +144,29 @@
   margin-top: 16px;
 }
 #footer #main-footer #footer-nav .footerLogo-link,
-#footer #main-footer #activity .footerLogo-link,
-#footer #main-footer #contact-us .footerLogo-link {
+#footer #main-footer #activity .footerLogo-link {
   text-decoration: none;
 }
 #footer #main-footer #footer-nav .footerLogo-link .footer-logo,
-#footer #main-footer #activity .footerLogo-link .footer-logo,
-#footer #main-footer #contact-us .footerLogo-link .footer-logo {
-  color: #0e0d0d;
+#footer #main-footer #activity .footerLogo-link .footer-logo {
+  color: #ff3c00;
   font-size: 1.5rem;
   font-weight: 900;
   margin: 16px 0;
 }
 #footer #main-footer #footer-nav .nav-title,
 #footer #main-footer #footer-nav .activity-title,
-#footer #main-footer #footer-nav .contact-title,
 #footer #main-footer #activity .nav-title,
-#footer #main-footer #activity .activity-title,
-#footer #main-footer #activity .contact-title,
-#footer #main-footer #contact-us .nav-title,
-#footer #main-footer #contact-us .activity-title,
-#footer #main-footer #contact-us .contact-title {
+#footer #main-footer #activity .activity-title {
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
+  color: #ff3c00;
 }
 #footer #main-footer #footer-nav .footerNav-list,
 #footer #main-footer #footer-nav .activity-list,
 #footer #main-footer #activity .footerNav-list,
-#footer #main-footer #activity .activity-list,
-#footer #main-footer #contact-us .footerNav-list,
-#footer #main-footer #contact-us .activity-list {
+#footer #main-footer #activity .activity-list {
   list-style: none;
   display: grid;
   place-items: start;
@@ -198,15 +189,7 @@
 #footer #main-footer #activity .activity-list .footerNav-item .footerNav-link,
 #footer #main-footer #activity .activity-list .footerNav-item .activity-link,
 #footer #main-footer #activity .activity-list .activity-items .footerNav-link,
-#footer #main-footer #activity .activity-list .activity-items .activity-link,
-#footer #main-footer #contact-us .footerNav-list .footerNav-item .footerNav-link,
-#footer #main-footer #contact-us .footerNav-list .footerNav-item .activity-link,
-#footer #main-footer #contact-us .footerNav-list .activity-items .footerNav-link,
-#footer #main-footer #contact-us .footerNav-list .activity-items .activity-link,
-#footer #main-footer #contact-us .activity-list .footerNav-item .footerNav-link,
-#footer #main-footer #contact-us .activity-list .footerNav-item .activity-link,
-#footer #main-footer #contact-us .activity-list .activity-items .footerNav-link,
-#footer #main-footer #contact-us .activity-list .activity-items .activity-link {
+#footer #main-footer #activity .activity-list .activity-items .activity-link {
   text-decoration: none;
   color: #0e0d0d;
 }
@@ -225,33 +208,96 @@
 #footer #main-footer #activity .activity-list .footerNav-item .footerNav-link:hover,
 #footer #main-footer #activity .activity-list .footerNav-item .activity-link:hover,
 #footer #main-footer #activity .activity-list .activity-items .footerNav-link:hover,
-#footer #main-footer #activity .activity-list .activity-items .activity-link:hover,
-#footer #main-footer #contact-us .footerNav-list .footerNav-item .footerNav-link:hover,
-#footer #main-footer #contact-us .footerNav-list .footerNav-item .activity-link:hover,
-#footer #main-footer #contact-us .footerNav-list .activity-items .footerNav-link:hover,
-#footer #main-footer #contact-us .footerNav-list .activity-items .activity-link:hover,
-#footer #main-footer #contact-us .activity-list .footerNav-item .footerNav-link:hover,
-#footer #main-footer #contact-us .activity-list .footerNav-item .activity-link:hover,
-#footer #main-footer #contact-us .activity-list .activity-items .footerNav-link:hover,
-#footer #main-footer #contact-us .activity-list .activity-items .activity-link:hover {
+#footer #main-footer #activity .activity-list .activity-items .activity-link:hover {
   color: #f4f9ff;
 }
-#footer #main-footer #footer-nav .contact-info,
-#footer #main-footer #activity .contact-info,
+#footer #main-footer #contact-us {
+  display: grid;
+  place-items: start;
+  grid-template-columns: repeat(1, 1fr);
+  width: 100%;
+  margin-top: 16px;
+}
+#footer #main-footer #contact-us .contact-title {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ff3c00;
+}
 #footer #main-footer #contact-us .contact-info {
   font-size: 0.9rem;
 }
-#footer #main-footer #footer-nav .contact-info .contact-infoLink,
-#footer #main-footer #activity .contact-info .contact-infoLink,
 #footer #main-footer #contact-us .contact-info .contact-infoLink {
-  color: #cd212a;
+  color: #ff3c00;
   font-weight: bolder;
+  text-decoration: none;
 }
-#footer #main-footer #footer-nav .contact-social .contact-socialItem .social-link .social-LinkImg,
-#footer #main-footer #activity .contact-social .contact-socialItem .social-link .social-LinkImg,
-#footer #main-footer #contact-us .contact-social .contact-socialItem .social-link .social-LinkImg {
+#footer #main-footer #contact-us .contact-info .contact-infoLink:hover {
+  color: #f4f9ff;
+}
+#footer #main-footer #contact-us .social-list {
+  list-style: none;
+  margin-top: 16px;
+  display: grid;
+  place-items: start;
+  grid-template-columns: repeat(3, 1fr);
+}
+#footer #main-footer #contact-us .social-list .social-item {
+  padding: 5px;
+}
+#footer #main-footer #contact-us .social-list .social-item .social-link {
+  width: 400px;
+}
+#footer #main-footer #contact-us .social-list .social-item .social-link .social-img {
   width: 30px;
   height: 30px;
+}
+#footer #main-footer #subscribe {
+  display: grid;
+  place-items: start;
+  grid-template-columns: repeat(1, 1fr);
+  width: 100%;
+  margin-top: 16px;
+}
+#footer #main-footer #subscribe .subscribe-info {
+  font-size: 0.9rem;
+}
+#footer #main-footer #subscribe form input {
+  margin-top: 16px;
+  min-height: 10px;
+  border-radius: 6px;
+  padding: 8px;
+  background-color: #f4f9ff;
+  border: 1px solid #65cd00;
+}
+#footer #main-footer #subscribe form button {
+  background-color: #ff3c00;
+  border: none;
+  width: 62px;
+  padding: 6px;
+  color: #f4f9ff;
+  border-radius: 6px;
+}
+#footer .copy-right {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  justify-self: start;
+  padding-left: 16px;
+  margin-top: 16px;
+}
+#footer .copy-right .copy-body {
+  font-size: 0.8rem;
+}
+#footer .copy-right .copy-body:hover {
+  color: #ff3c00;
+}
+#footer .copy-right .copy-tearms {
+  font-size: 0.8rem;
+  justify-self: start;
+}
+#footer .copy-right .copy-tearms:hover {
+  color: #ff3c00;
 }
 
 /*# sourceMappingURL=about-us.css.map */

@@ -6,28 +6,26 @@
   #main-footer {
     width: 90%;
     @include mixin.grid-center-columns(grid, center, 1);
-
     #footer-nav,
-    #activity,
-    #contact-us {
+    #activity {
       @include mixin.grid-center-columns(grid, start, 1);
       width: 100%;
       margin-top: 16px;
       .footerLogo-link {
         text-decoration: none;
         .footer-logo {
-          color: variables.$itaian-black;
+          color: variables.$italian-newRed;
           font-size: 1.5rem;
           font-weight: 900;
           margin: 16px 0;
         }
       }
       .nav-title,
-      .activity-title,
-      .contact-title {
+      .activity-title {
         font-size: 1rem;
         font-weight: bold;
         text-transform: uppercase;
+        color: variables.$italian-newRed;
       }
       .footerNav-list,
       .activity-list {
@@ -48,22 +46,98 @@
           }
         }
       }
+    }
+    #contact-us {
+      @include mixin.grid-center-columns(grid, start, 1);
+      width: 100%;
+      margin-top: 16px;
+      .contact-title {
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: variables.$italian-newRed;
+      }
       .contact-info {
         font-size: 0.9rem;
         .contact-infoLink {
-          color: variables.$italian-red;
+          color: variables.$italian-newRed;
           font-weight: bolder;
+          text-decoration: none;
+          &:hover {
+            color: variables.$italian-white;
+          }
         }
       }
-      .contact-social {
-        .contact-socialItem {
+      .social-list {
+        list-style: none;
+        margin-top: 16px;
+        @include mixin.grid-center-columns(grid, start, 3);
+
+        .social-item {
+          padding: 5px;
           .social-link {
-            .social-LinkImg {
+            width: 400px;
+
+            .social-img {
               width: 30px;
               height: 30px;
             }
           }
         }
+      }
+    }
+    #subscribe {
+      @include mixin.grid-center-columns(grid, start, 1);
+      width: 100%;
+      margin-top: 16px;
+      .subscribe-info {
+        font-size: 0.9rem;
+      }
+      form {
+        input {
+          margin-top: 16px;
+          min-height: 10px;
+          border-radius: 6px;
+          padding: 8px;
+          background-color: variables.$italian-white;
+          border: 1px solid variables.$italian-limegreen;
+        }
+        button {
+          background-color: variables.$italian-newRed;
+          border: none;
+          width: 62px;
+          padding: 6px;
+          color: variables.$italian-white;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+  // .line-br {
+  //   width: 100%;
+  //   margin-top: 1rem;
+  //   height: 2px;
+  //   color: none;
+  //   background-color: variables.$italian-white;
+  //   border: none;
+  // }
+
+  .copy-right {
+    @include mixin.grid-center-columns(grid, center, 1);
+    justify-self: start;
+    padding-left: 16px;
+    margin-top: 16px;
+    .copy-body {
+      font-size: 0.8rem;
+      &:hover {
+        color: variables.$italian-newRed;
+      }
+    }
+    .copy-tearms {
+      font-size: 0.8rem;
+      justify-self: start;
+      &:hover {
+        color: variables.$italian-newRed;
       }
     }
   }
