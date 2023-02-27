@@ -10,10 +10,13 @@
 }
 body {
   list-style: none;
+  text-decoration: none;
+  @include mixin.poppins-regular;
 }
 #main {
   min-height: 80vh;
   @include mixin.grid-center-columns(grid, center, 1);
+  background-color: variables.$italian-white;
 
   .main-menu {
     @include mixin.grid-center-columns(grid, center, 1);
@@ -21,14 +24,14 @@ body {
     list-style: none;
     width: 100%;
     border: 1px solid variables.$italian-limegreen;
-    background-color: variables.$italian-white;
+
     .menu-list {
       width: 100%;
       min-height: 6vh;
       list-style: none;
       @include mixin.grid-center-flexable(grid, center, repeat(5, 1fr));
       .menu-item {
-        font-size: 0.59rem;
+        font-size: 0.69rem;
         letter-spacing: 0.0211px;
         text-transform: uppercase;
         color: variables.$italian-limegreen;

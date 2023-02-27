@@ -21,6 +21,9 @@
   display: grid;
   place-items: center;
   grid-template-columns: repeat(1, 1fr);
+  font-family: "poppins-bold";
+  font-weight: 700;
+  font-style: normal;
   background-color: #65cd00;
 }
 #header .header-nav {
@@ -39,9 +42,6 @@
   width: 100%;
   background-color: #0e0d0d;
   padding: 0 16px;
-  font-family: "poppins-bold";
-  font-weight: 900;
-  font-style: normal;
   display: grid;
   place-items: center;
   grid-template-columns: repeat(auto-fill, minmax(94px, 1fr));
@@ -62,9 +62,6 @@
   justify-self: end;
 }
 #header .header-nav .social-list .social-item a .mobile {
-  font-family: "poppins-bold";
-  font-weight: 900;
-  font-style: normal;
   font-size: 0.75rem;
   line-height: normal;
   letter-spacing: normal;
@@ -87,6 +84,9 @@
 #header .header-nav .mobile-nav .menu {
   justify-self: start;
   padding: 0 16px;
+}
+#header .header-nav .mobile-nav .logo-link {
+  text-decoration: none;
 }
 #header .header-nav .mobile-nav .logo-link .logo {
   color: #0e0d0d;
@@ -123,4 +123,65 @@
   }
 }
 
-/*# sourceMappingURL=menu.css.map */
+#footer {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: #65cd00;
+}
+
+.social-link img {
+  width: 30px;
+  height: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  list-style: none;
+}
+
+#main {
+  min-height: 80vh;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: #f4f9ff;
+}
+#main .main-menu {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  align-self: start;
+  list-style: none;
+  width: 100%;
+  border: 1px solid #65cd00;
+}
+#main .main-menu .menu-list {
+  width: 100%;
+  min-height: 6vh;
+  list-style: none;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+}
+#main .main-menu .menu-list .menu-item {
+  font-size: 0.59rem;
+  letter-spacing: 0.0211px;
+  text-transform: uppercase;
+  color: #65cd00;
+  font-weight: 900;
+}
+
+@media only screen and (min-width: 600px) {
+  .social-list {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

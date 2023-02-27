@@ -1,10 +1,70 @@
 @use "variables";
+@use "mixin";
 #footer {
-  min-height: 10vh;
+  @include mixin.grid-center-columns(grid, center, 1);
   background-color: variables.$italian-limegreen;
-}
+  #main-footer {
+    width: 90%;
+    @include mixin.grid-center-columns(grid, center, 1);
 
-.social-link img {
-  width: 30px;
-  height: 30px;
+    #footer-nav,
+    #activity,
+    #contact-us {
+      @include mixin.grid-center-columns(grid, start, 1);
+      width: 100%;
+      margin-top: 16px;
+      .footerLogo-link {
+        text-decoration: none;
+        .footer-logo {
+          color: variables.$itaian-black;
+          font-size: 1.5rem;
+          font-weight: 900;
+          margin: 16px 0;
+        }
+      }
+      .nav-title,
+      .activity-title,
+      .contact-title {
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .footerNav-list,
+      .activity-list {
+        list-style: none;
+        @include mixin.grid-center-columns(grid, start, 1);
+        font-size: 0.9rem;
+        font-weight: 900;
+        .footerNav-item,
+        .activity-items {
+          .footerNav-link,
+          .activity-link {
+            text-decoration: none;
+            color: variables.$itaian-black;
+
+            &:hover {
+              color: variables.$italian-white;
+            }
+          }
+        }
+      }
+      .contact-info {
+        font-size: 0.9rem;
+        .contact-infoLink {
+          color: variables.$italian-red;
+          font-weight: bolder;
+        }
+      }
+      .contact-social {
+        .contact-socialItem {
+          .social-link {
+            .social-LinkImg {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

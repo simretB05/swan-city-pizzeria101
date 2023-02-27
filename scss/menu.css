@@ -21,6 +21,9 @@
   display: grid;
   place-items: center;
   grid-template-columns: repeat(1, 1fr);
+  font-family: "poppins-bold";
+  font-weight: 700;
+  font-style: normal;
   background-color: #65cd00;
 }
 #header .header-nav {
@@ -39,9 +42,6 @@
   width: 100%;
   background-color: #0e0d0d;
   padding: 0 16px;
-  font-family: "poppins-bold";
-  font-weight: 900;
-  font-style: normal;
   display: grid;
   place-items: center;
   grid-template-columns: repeat(auto-fill, minmax(94px, 1fr));
@@ -62,9 +62,6 @@
   justify-self: end;
 }
 #header .header-nav .social-list .social-item a .mobile {
-  font-family: "poppins-bold";
-  font-weight: 900;
-  font-style: normal;
   font-size: 0.75rem;
   line-height: normal;
   letter-spacing: normal;
@@ -87,6 +84,9 @@
 #header .header-nav .mobile-nav .menu {
   justify-self: start;
   padding: 0 16px;
+}
+#header .header-nav .mobile-nav .logo-link {
+  text-decoration: none;
 }
 #header .header-nav .mobile-nav .logo-link .logo {
   color: #0e0d0d;

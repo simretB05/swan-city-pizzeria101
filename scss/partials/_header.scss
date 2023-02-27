@@ -3,7 +3,6 @@
 #header {
   min-height: 10vh;
   @include mixin.grid-center-columns(grid, center, 1);
-  @include mixin.poppins-bold;
   background-color: variables.$italian-limegreen;
   .header-nav {
     width: 100%;
@@ -17,6 +16,7 @@
       width: 100%;
       background-color: variables.$itaian-black;
       padding: 0 16px;
+      @include mixin.poppins-bold;
       @include mixin.grid-center-header(grid, center, repeat(3, 1fr));
       .social-item {
         width: 100%;
@@ -31,6 +31,7 @@
             justify-self: end;
           }
           .mobile {
+            @include mixin.poppins-bold;
             @include mixin.font-properties(0.75rem);
             text-transform: capitalize;
             color: variables.$italian-limegreen;
@@ -54,7 +55,6 @@
         padding: 0 16px;
       }
       .logo-link {
-        text-decoration: none;
         .logo {
           color: variables.$itaian-black;
         }
@@ -69,6 +69,7 @@
       display: none;
 
       .nav-items {
+        width: 1005%;
       }
     }
     .nav-login {
