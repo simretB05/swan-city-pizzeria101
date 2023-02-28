@@ -28,38 +28,32 @@
   display: grid;
   place-items: start;
   grid-template-columns: repeat(1, 1fr);
-  display: grid;
-  place-items: center;
   grid-template-rows: repeat(2, 1fr);
 }
 #header .header-nav .social-list {
-  align-self: start;
-  list-style: none;
-  height: 4.8vh;
   width: 100%;
+  height: 40%;
   background-color: #0e0d0d;
-  padding: 0 16px;
-  font-family: "poppins-bold";
   font-weight: 900;
-  font-style: normal;
   display: grid;
-  place-items: center;
   grid-template-columns: repeat(auto-fill, minmax(94px, 1fr));
 }
 #header .header-nav .social-list .social-item {
   width: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(1, 1fr);
 }
 #header .header-nav .social-list .social-item a {
   text-decoration: none;
   display: grid;
   place-items: center;
   grid-template-columns: repeat(2, 1fr);
-  width: 100%;
+  width: 90%;
 }
 #header .header-nav .social-list .social-item a img {
   width: 20px;
   height: 20px;
-  justify-self: end;
 }
 #header .header-nav .social-list .social-item a .mobile {
   font-family: "poppins-bold";
@@ -70,7 +64,6 @@
   letter-spacing: normal;
   text-transform: capitalize;
   color: #65cd00;
-  margin-left: 5px;
 }
 #header .header-nav .social-list .social-item a .tablet {
   display: none;

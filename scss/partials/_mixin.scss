@@ -42,9 +42,7 @@
   grid-template-columns: repeat($columns, 1fr);
 }
 
-@mixin grid-center-rows($display, $place-items, $rows) {
-  display: $display;
-  place-items: $place-items;
+@mixin grid-center-rows($rows) {
   grid-template-rows: repeat($rows, 1fr);
 }
 @mixin grid-center-header($display, $place-items, $columns) {

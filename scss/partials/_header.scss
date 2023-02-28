@@ -7,35 +7,33 @@
   .header-nav {
     width: 100%;
     @include mixin.grid-center-columns(grid, start, 1);
-    @include mixin.grid-center-rows(grid, center, 2);
-
+    @include mixin.grid-center-rows(2);
     .social-list {
-      align-self: start;
-      list-style: none;
-      height: 4.8vh;
       width: 100%;
-      background-color: variables.$itaian-black;
-      padding: 0 16px;
-      @include mixin.poppins-bold;
-      @include mixin.grid-center-header(grid, center, repeat(3, 1fr));
+      height: 40%;
+      background-color: #0e0d0d;
+      font-weight: 900;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(94px, 1fr));
       .social-item {
         width: 100%;
+        @include mixin.grid-center-columns(grid, center, 1);
+
         a {
           text-decoration: none;
           @include mixin.grid-center-columns(grid, center, 2);
-          width: 100%;
+
+          width: 90%;
 
           img {
             width: 20px;
             height: 20px;
-            justify-self: end;
           }
           .mobile {
             @include mixin.poppins-bold;
             @include mixin.font-properties(0.75rem);
             text-transform: capitalize;
             color: variables.$italian-limegreen;
-            margin-left: 5px;
           }
           .tablet {
             display: none;
