@@ -4,20 +4,17 @@
   @include mixin.grid-center-columns(grid, center, 1);
   background-color: variables.$italian-limegreen;
   #main-footer {
+    margin-top: 14px;
     width: 90%;
     @include mixin.grid-center-columns(grid, center, 1);
     #footer-nav,
     #activity {
       @include mixin.grid-center-columns(grid, start, 1);
       width: 100%;
-      margin-top: 16px;
+      margin-top: 3px;
       .footerLogo-link {
         text-decoration: none;
         .footer-logo {
-          color: variables.$italian-newRed;
-          font-size: 1.5rem;
-          font-weight: 900;
-          margin: 16px 0;
         }
       }
       .nav-title,
@@ -31,8 +28,8 @@
       .activity-list {
         list-style: none;
         @include mixin.grid-center-columns(grid, start, 1);
-        font-size: 0.9rem;
-        font-weight: 900;
+        font-size: 0.8rem;
+        font-weight: 400;
         .footerNav-item,
         .activity-items {
           .footerNav-link,
@@ -50,7 +47,6 @@
     #contact-us {
       @include mixin.grid-center-columns(grid, start, 1);
       width: 100%;
-      margin-top: 16px;
       .contact-title {
         font-size: 1rem;
         font-weight: bold;
@@ -58,7 +54,7 @@
         color: variables.$italian-newRed;
       }
       .contact-info {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         .contact-infoLink {
           color: variables.$italian-newRed;
           font-weight: bolder;
@@ -70,7 +66,7 @@
       }
       .social-list {
         list-style: none;
-        margin-top: 16px;
+
         @include mixin.grid-center-columns(grid, start, 3);
 
         .social-item {
@@ -89,7 +85,7 @@
     #subscribe {
       @include mixin.grid-center-columns(grid, start, 1);
       width: 100%;
-      margin-top: 16px;
+
       .subscribe-info {
         font-size: 0.9rem;
       }
@@ -123,18 +119,18 @@
   // }
 
   .copy-right {
-    @include mixin.grid-center-columns(grid, center, 1);
+    @include mixin.grid-center-columns(grid, center, 2);
     justify-self: start;
     padding-left: 16px;
     margin-top: 16px;
     .copy-body {
-      font-size: 0.8rem;
+      font-size: 0.6rem;
       &:hover {
         color: variables.$italian-newRed;
       }
     }
     .copy-tearms {
-      font-size: 0.8rem;
+      font-size: 0.6rem;
       justify-self: start;
       &:hover {
         color: variables.$italian-newRed;

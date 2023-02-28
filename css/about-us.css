@@ -123,6 +123,7 @@
   background-color: #65cd00;
 }
 #footer #main-footer {
+  margin-top: 14px;
   width: 90%;
   display: grid;
   place-items: center;
@@ -134,18 +135,11 @@
   place-items: start;
   grid-template-columns: repeat(1, 1fr);
   width: 100%;
-  margin-top: 16px;
+  margin-top: 3px;
 }
 #footer #main-footer #footer-nav .footerLogo-link,
 #footer #main-footer #activity .footerLogo-link {
   text-decoration: none;
-}
-#footer #main-footer #footer-nav .footerLogo-link .footer-logo,
-#footer #main-footer #activity .footerLogo-link .footer-logo {
-  color: #cd212a;
-  font-size: 1.5rem;
-  font-weight: 900;
-  margin: 16px 0;
 }
 #footer #main-footer #footer-nav .nav-title,
 #footer #main-footer #footer-nav .activity-title,
@@ -164,8 +158,8 @@
   display: grid;
   place-items: start;
   grid-template-columns: repeat(1, 1fr);
-  font-size: 0.9rem;
-  font-weight: 900;
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 #footer #main-footer #footer-nav .footerNav-list .footerNav-item .footerNav-link,
 #footer #main-footer #footer-nav .footerNav-list .footerNav-item .activity-link,
@@ -209,7 +203,6 @@
   place-items: start;
   grid-template-columns: repeat(1, 1fr);
   width: 100%;
-  margin-top: 16px;
 }
 #footer #main-footer #contact-us .contact-title {
   font-size: 1rem;
@@ -218,7 +211,7 @@
   color: #cd212a;
 }
 #footer #main-footer #contact-us .contact-info {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 #footer #main-footer #contact-us .contact-info .contact-infoLink {
   color: #cd212a;
@@ -230,7 +223,6 @@
 }
 #footer #main-footer #contact-us .social-list {
   list-style: none;
-  margin-top: 16px;
   display: grid;
   place-items: start;
   grid-template-columns: repeat(3, 1fr);
@@ -250,7 +242,6 @@
   place-items: start;
   grid-template-columns: repeat(1, 1fr);
   width: 100%;
-  margin-top: 16px;
 }
 #footer #main-footer #subscribe .subscribe-info {
   font-size: 0.9rem;
@@ -274,19 +265,19 @@
 #footer .copy-right {
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-self: start;
   padding-left: 16px;
   margin-top: 16px;
 }
 #footer .copy-right .copy-body {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 #footer .copy-right .copy-body:hover {
   color: #cd212a;
 }
 #footer .copy-right .copy-tearms {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   justify-self: start;
 }
 #footer .copy-right .copy-tearms:hover {
