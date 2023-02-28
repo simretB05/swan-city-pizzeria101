@@ -149,7 +149,7 @@
 }
 #footer #main-footer #footer-nav .footerLogo-link .footer-logo,
 #footer #main-footer #activity .footerLogo-link .footer-logo {
-  color: #ff3c00;
+  color: #cd212a;
   font-size: 1.5rem;
   font-weight: 900;
   margin: 16px 0;
@@ -161,7 +161,7 @@
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #ff3c00;
+  color: #cd212a;
 }
 #footer #main-footer #footer-nav .footerNav-list,
 #footer #main-footer #footer-nav .activity-list,
@@ -222,13 +222,13 @@
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #ff3c00;
+  color: #cd212a;
 }
 #footer #main-footer #contact-us .contact-info {
   font-size: 0.9rem;
 }
 #footer #main-footer #contact-us .contact-info .contact-infoLink {
-  color: #ff3c00;
+  color: #cd212a;
   font-weight: bolder;
   text-decoration: none;
 }
@@ -271,7 +271,7 @@
   border: 1px solid #65cd00;
 }
 #footer #main-footer #subscribe form button {
-  background-color: #ff3c00;
+  background-color: #cd212a;
   border: none;
   width: 62px;
   padding: 6px;
@@ -290,14 +290,14 @@
   font-size: 0.8rem;
 }
 #footer .copy-right .copy-body:hover {
-  color: #ff3c00;
+  color: #cd212a;
 }
 #footer .copy-right .copy-tearms {
   font-size: 0.8rem;
   justify-self: start;
 }
 #footer .copy-right .copy-tearms:hover {
-  color: #ff3c00;
+  color: #cd212a;
 }
 
 * {
