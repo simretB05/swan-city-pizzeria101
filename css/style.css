@@ -145,7 +145,7 @@
 #footer #main-footer #footer-nav .activity-title,
 #footer #main-footer #activity .nav-title,
 #footer #main-footer #activity .activity-title {
-  font-size: 0.681rem;
+  font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #cd212a;
@@ -158,7 +158,7 @@
   display: grid;
   place-items: start;
   grid-template-columns: repeat(1, 1fr);
-  font-size: 0.68rem;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 #footer #main-footer #footer-nav .footerNav-list .footerNav-item .footerNav-link,
@@ -205,13 +205,13 @@
   width: 100%;
 }
 #footer #main-footer #contact-us .contact-title {
-  font-size: 0.681rem;
+  font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #cd212a;
 }
 #footer #main-footer #contact-us .contact-info {
-  font-size: 0.68rem;
+  font-size: 0.9rem;
 }
 #footer #main-footer #contact-us .contact-info .contact-infoLink {
   color: #cd212a;
@@ -244,13 +244,13 @@
   width: 100%;
 }
 #footer #main-footer #subscribe .subscribe-title {
-  font-size: 0.681rem;
+  font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #cd212a;
 }
 #footer #main-footer #subscribe .subscribe-info {
-  font-size: 0.68rem;
+  font-size: 0.9rem;
 }
 #footer #main-footer #subscribe form {
   margin-bottom: 16px;

@@ -19,7 +19,7 @@
       }
       .nav-title,
       .activity-title {
-        font-size: 0.681rem;
+        font-size: 1rem;
         font-weight: bold;
         text-transform: uppercase;
         color: variables.$italian-newRed;
@@ -28,7 +28,7 @@
       .activity-list {
         list-style: none;
         @include mixin.grid-center-columns(grid, start, 1);
-        font-size: 0.68rem;
+        font-size: 0.9rem;
         font-weight: 400;
         .footerNav-item,
         .activity-items {
@@ -48,13 +48,13 @@
       @include mixin.grid-center-columns(grid, start, 1);
       width: 100%;
       .contact-title {
-        font-size: 0.681rem;
+        font-size: 1rem;
         font-weight: bold;
         text-transform: uppercase;
         color: variables.$italian-newRed;
       }
       .contact-info {
-        font-size: 0.68rem;
+        font-size: 0.9rem;
         .contact-infoLink {
           color: variables.$italian-newRed;
           font-weight: bolder;
@@ -86,13 +86,13 @@
       @include mixin.grid-center-columns(grid, start, 1);
       width: 100%;
       .subscribe-title {
-        font-size: 0.681rem;
+        font-size: 1rem;
         font-weight: bold;
         text-transform: uppercase;
         color: variables.$italian-newRed;
       }
       .subscribe-info {
-        font-size: 0.68rem;
+        font-size: 0.9rem;
       }
       form {
         margin-bottom: 16px;
