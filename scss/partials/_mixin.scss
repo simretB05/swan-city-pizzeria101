@@ -63,14 +63,18 @@
 
 // mixins for media queries
 
+// @mixin tablet {
+//   @media (min-width: $tablet-breakpoint) {
+//     @content;
+//   }
+// }
 @mixin tablet {
-  @media (min-width: $tablet-breakpoint) {
+  @media (max-width: 600px) {
     @content;
   }
 }
-
 @mixin desktop {
-  @media (min-width: $desktop-breakpoint) {
+  @media (min-width: 1000px) {
     @content;
   }
 }

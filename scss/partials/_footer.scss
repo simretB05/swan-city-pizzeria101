@@ -139,6 +139,18 @@
       &:hover {
         color: variables.$italian-newRed;
       }
+      @include mixin.tablet {
+        justify-self: end;
+        background-color: aqua;
+      }
     }
+  }
+}
+
+// mobile.query
+@media only screen and (min-width: 600px) {
+  .copy-tearms {
+    font-size: 0.6rem;
+    justify-self: end;
   }
 }

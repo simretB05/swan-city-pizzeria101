@@ -290,5 +290,18 @@
 #footer .copy-right .copy-tearms:hover {
   color: #cd212a;
 }
+@media (max-width: 600px) {
+  #footer .copy-right .copy-tearms {
+    justify-self: end;
+    background-color: aqua;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .copy-tearms {
+    font-size: 0.6rem;
+    justify-self: end;
+  }
+}
 
 /*# sourceMappingURL=about-us.css.map */
